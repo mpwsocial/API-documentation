@@ -1,0 +1,1043 @@
+{
+	"info": {
+		"_postman_id": "71a18210-2a79-41a0-a1a4-9b96303750a5",
+		"name": "MoiPayWay API",
+		"description": "## Develop awesomely using MoiPayWay API\n\nOur API documentation will guide you on means to integrate MoiPayWay products (such as authenticating users, managing wallets, doing direct verification, and creating tokens).\n\nTo get started you will need to create an account [to access API keys.](https://app.moipayway.com/)\n\n##### Environment Details\n\n| Environment {Live & Test} | Production | Development |\n| --- | --- | --- |\n| Dashboard | [https://app.moipayway.com](https://app.moipayway.com) | [https://app.moipayway.com](https://app.moipayway.com) |\n| API | [https://api.moipayway.com](https://api.moipayway.com) | [https://api.moipayway.com](https://api.moipayway.com) |\n\nIf you face any challenges don't hesitate to contact us at [hello@moipayway.com](mailto:hello@moipayway.com)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Misc",
+			"item": [
+				{
+					"name": "Status",
+					"_postman_id": "3b1c4d63-89b7-4aa6-85ce-c66f4a396b85",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order_reference_code\": \"\",\n    \"limit\": \"\",\n    \"page\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/status"
+					},
+					"response": []
+				},
+				{
+					"name": "File Upload",
+					"_postman_id": "c692b323-0b72-4bec-a095-fe068f6f31a2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"value": null
+								},
+								{
+									"key": "distributed",
+									"value": "",
+									"description": "Yes or No",
+									"type": "default"
+								}
+							],
+							"options": {}
+						},
+						"url": "https://api.moipayway.com/file-upload"
+					},
+					"response": []
+				},
+				{
+					"name": "Charges",
+					"_postman_id": "2dc7e2f5-e22f-4cec-bae0-d354b456b14b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": \"\",\n    \"code\": \"\",\n    \"action\": \"\" //lookup or create or collect or generate or exchange or transfer or details\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/charges"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "7387d27d-9356-44f5-9023-2baf9f7c335b",
+			"description": "This folder contains miscellaneous endpoints needed to have smooth integration with MoiPayWay infrastructure."
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Sign Up",
+					"_postman_id": "4ffc9207-d3f7-4449-83b5-3c555f4e873a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"\",\n    \"password\": \"\",\n    \"phone_number\": \"\", //starting with +\n    \"send_validation_code\": \"\", //enum Yes or No\n    \"validation_code\": \"\" //Needed for validation\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/user/signup",
+						"description": "**Authentication**\n\nGet in to MoiPayWay infrastructure by creating an account to identify you as a user or sub-user of a merchant account.\n\n**Merchant API key required to authorize**"
+					},
+					"response": []
+				},
+				{
+					"name": "Sign In",
+					"_postman_id": "e5a9878e-71dd-465b-a05b-eb6cb4adbeff",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"\",\n    \"password\": \"\",\n    \"phone_number\": \"\", //starting with +\n    \"send_validation_code\": \"\", //enum Yes or No\n    \"validation_code\": \"\" //Needed for validation\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/user/signin",
+						"description": "**Authentication**\n\nSign in to get token and make calls on the MoiPayWay system."
+					},
+					"response": []
+				},
+				{
+					"name": "Recover Account",
+					"_postman_id": "08297f58-9fd2-45a6-8571-9f74a218aa8a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\" : \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/user/recover-account",
+						"description": "**Authentication**\n\nGet you back into system using the email address registered with."
+					},
+					"response": []
+				},
+				{
+					"name": "Sign Out",
+					"_postman_id": "3b61c2cd-fa85-4e05-a0af-2f5581f781b4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/user/sign-out",
+						"description": "**Authentication**\n\nProvide the signed in token to sign out of the system. This provide additional security when using the system."
+					},
+					"response": []
+				},
+				{
+					"name": "Account",
+					"_postman_id": "f8b693f7-ed19-4ed1-b0e4-eabdbcd149a4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"action\": \"view or update\",\n    \"phone_number\": \"\",\n    \"email\": \"\",\n    \"password\": \"\",\n    \"username\": \"\",\n    \"sms_notification\": \"\",\n    \"email_notification\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/user/account",
+						"description": "This endpoint allows you to retrieve entire details of an account in the system which correspond with merchant exploring the account.\n\n**Token returned from sign in authentication required**"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "973469c4-871d-4b32-8a00-edc3a6836596"
+		},
+		{
+			"name": "Merchant",
+			"item": [
+				{
+					"name": "Sign Up",
+					"_postman_id": "e01a64f8-a4de-4496-aa98-f560bc45d8f5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"\",\n    \"business_email\": \"\",\n    \"description\": \"\",\n    \"phone_number\": \"\",\n    \"type\": \"\" //Retrieve from type endpoint\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/merchant/signup",
+						"description": "**Authentication**\n\nThis endpoint allows you to open a business account or a control account for you to access the MoiPayWay infrastructure."
+					},
+					"response": []
+				},
+				{
+					"name": "Sign In",
+					"_postman_id": "7ea4c87e-cf0a-4966-a80d-b7d4c8c31252",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"api_key\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/merchant/signin",
+						"description": "**Authentication**\n\nGet in control of your merchant account and orders by signing in with the signed in token and the API key associated with your account."
+					},
+					"response": []
+				},
+				{
+					"name": "Account",
+					"_postman_id": "aaca4e4c-7b8c-4ba9-853a-d66c99acb814",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"action\": \"\", //view or update\n    \"name\": \"\",\n    \"description\": \"\",\n    \"success_webhook_url\": \"\",\n    \"failed_webhook_url\": \"\",\n    \"short_name\": \"\",\n    \"bearer\": \"\", //merchant or user\n    \"merchant_email_notification\": \"\", //Yes or No\n    \"merchant_sms_notification\": \"\", //Yes or No\n    \"user_email_notification\": \"\", //Yes or No\n    \"user_sms_notification\": \"\", //Yes or No\n    \"logo\": \"\",\n    \"business_email\": \"\",\n    \"support_email\": \"\",\n    \"phone_number\": \"\",\n    \"active\": \"\", //Yes or No\n    \"management\": \"\" //Yes or No\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/merchant/account",
+						"description": "Manage and retrieve your merchant account for updates and settings to meets your usage."
+					},
+					"response": []
+				},
+				{
+					"name": "Team",
+					"_postman_id": "9524668f-5e69-45cd-b6bc-a2fb385420bf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"action\": \"\", //read or create or update or delete\n    \"email\": \"\", //email of the team to create  [optional]\n    \"phone_number\": \"\", //phone number of the team to create [optional]\n    \"management\": \"\", //Yes or No\n    \"permission\": \"\", //full or partial\n    \"team_id\": \"\" //email of the team to delete and update or read\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/merchant/teams",
+						"description": "**This endpoint allows you manage your team to have access to the infrastructure.  \n  \n***To create or add team member*\n\n``` json\n{\n    \"token\": \"response from merchants signin\",\n    \"action\": \"create\", \n    \"email\": \"email\", \n    \"permission\": \"full or partial\", \n    \"notify\" : \"Yes or leave blank\" \n}\n\n```\n\n*To update or delete*\n\n``` json\n{\n    \"token\": \"response from merchants signin\",\n    \"action\": \"update or delete\", \n    \"team_id\": \"\", \n    \"permission\": \"full or partial if updating\", \n}\n\n```"
+					},
+					"response": []
+				},
+				{
+					"name": "Type",
+					"_postman_id": "69454cec-6e15-4740-8f42-96371fa72ff2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/merchant/type",
+						"description": "Get list of business types or sectors on MoiPayWay"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "19ad5ed9-5b02-4e19-a0ff-02db0a2cf3dd"
+		},
+		{
+			"name": "Verification",
+			"item": [
+				{
+					"name": "lookup",
+					"_postman_id": "b7c1f3ec-3c9f-4007-bafc-b09c1712a43a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"\", //get from misc endpoint\n    \"order_reference_code\": \"\", //optional\n    \"meta\": {\n        \"front_image\": \"\", //file URL - needed if sending multiple look\n        \"back_image\": \"\", //file URL - needed if sending multiple look\n        \"value\": \"\" //this can be image url or number or text or file URL or combination\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/verification/lookup",
+						"description": "## Verification with standard secure identification.\n\nVerify IP, phone number, biometric, bank account, facial recognition, company details, government issued IDs and so much more."
+					},
+					"response": []
+				},
+				{
+					"name": "Details",
+					"_postman_id": "dd6cc94a-7276-4a42-b0fb-a2f7a69f6f89",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"limit\": \"\",\n    \"page\": \"\",\n    \"code\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/verification/details"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "3cb602f0-f877-47a0-858f-6bbb34c5a1b2"
+		},
+		{
+			"name": "Wallet",
+			"item": [
+				{
+					"name": "Crypto",
+					"item": [
+						{
+							"name": "Create Wallet",
+							"_postman_id": "95b77200-e516-4300-860b-4e1564f92e0f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"code\": \"\", //get from misc endpoint\n    \"order_reference_code\": \"\",\n    \"manage\": \"\", //Yes or No;\n    \"meta\": {\n        \"name\": \"\", //label\n        \"customID\": \"\" //optional - email address of account creating wallet for (serve as identifier)\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/create",
+								"description": "## Create and manage wallets\n\nTo collect, exchange & payout of funds or coins or tokens"
+							},
+							"response": []
+						},
+						{
+							"name": "Generate Account",
+							"_postman_id": "119fce4f-d6f4-47d1-8523-4fab8f1c4d80",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"meta\": {\n        \"name\": \"\", //label\n        \"customID\": \"\", //CustomID returned when creating wallet\n        \"index\": \"\", //The index of address to be generated\n        \"xpub\": \"\",\n        \"mnemonic\": \"\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/generate-account"
+							},
+							"response": []
+						},
+						{
+							"name": "Collect",
+							"_postman_id": "da87051f-0acb-4862-83e0-b591b3076a6b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"amount\": \"\",\n    \"meta\": {\n        \"name\": \"\", //label\n        \"narration\": \"\", //details of value collection\n        \"customID\": \"\", //To receive value on custodial wallet.\n        \"address\": \"\", //If passed, value will updated on the chain for Non-custodial, and if customID and address correspond, address to be displayed will be the address passed and it will treated as custodial transaction.\n           \"bearer\": \"\" //charges bearer\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/collect"
+							},
+							"response": []
+						},
+						{
+							"name": "Transfer",
+							"_postman_id": "6b042102-3fdd-48f5-8f40-7bb6b7d65d83",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"amount\": \"\", //amount\n    \"meta\": {\n        \"name\": \"\", //label\n        \"narration\": \"\", //details of value collection\n        \"from\": \"\", //customID or address\n        \"privateKey\": \"\", //sender address Private Key if non-custodial\n        \"to\": \"\", //customID or address\n        \"altCurrency\": \"\", //if not sending in base currency. e.g.   CUSD instead of CELO\n        \"ReceivingCurrency\": \"\", //if not receiving in base currency.\n        \"bearer\": \"\", //charges bearer\n        \"gasLimit\": \"\",\n        \"gasPrice\": \"\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/transfer"
+							},
+							"response": []
+						},
+						{
+							"name": "Details",
+							"_postman_id": "d983b5b7-0970-4b70-bed0-74dfbf7721d0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"type\": \"\", //transactions or balance or list or rate or list_wallet or list_account\n    \"limit\": \"\", //display per page\n    \"page\": \"\", //page to display\n    \"filterBy\": \"\", //credit or debit\n    \"sortBy\": \"\", //old or new\n    \"rangeFrom\": \"\", //from timestamp\n    \"rangeTo\": \"\", //to timestamp\n    \"meta\": {\n        \"txID\": \"\", //txID return after each request\n        \"customID\": \"\", //if passed all the details of addresses the customID has will be returned\n        \"address\": \"\", // if customID empty, transactions of address will only be display \n        \"from\": \"\",\n        \"to\": \"\",\n        \"amount\": \"\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/details"
+							},
+							"response": []
+						},
+						{
+							"name": "Exchange",
+							"_postman_id": "a3e72299-15c0-447e-8b30-642ffb20aa2e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "VZFczZ1asNlVtlEMU1WNXJFbaVkWHhWYhFjVoZFbkdlVtdneWxmVhJmRGNXZFRWalZkSXllboZkVxAneXxmWXZFWCRXVzwWYWxWS490RxcFZVlkeWVUOhJmRKdlWFp1VTpnV0Z1aaNnVHpEWldUMWRleWJXVsR2UTZkWxEVb1cVVx82dZpmWLZFbaRVUspVVSxGczRFbWtmUtJVVTxmWT1UVVpnVu50UNxmUQdVb0N1UWp0cZ1WOLJmRshFZFRGbWxmWHdFbFFTTGpFUWtmWX1keGVVVB1TP"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"code\": \"\", \n    \"order_reference_code\": \"\",\n    \"amount\": \"\", //amount\n    \"meta\": {\n        \"from\": \"\",\n        \"to\": \"\",\n        \"address\": \"\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/exchange"
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "713f547d-5bae-4f0a-8f26-e432d2ef874b",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Fiat",
+					"item": [
+						{
+							"name": "Create Wallet",
+							"_postman_id": "b33dc31f-a6c4-4855-9753-e1681a9e3d14",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"code\": \"\", //get from misc endpoint\n    \"order_reference_code\": \"\",\n    \"meta\": {\n        \"name\": \"\", //label\n        \"customID\": \"\" //optional - email address of account creating wallet for (serve as identifier)\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/create",
+								"description": "## Create and manage wallets\n\nTo collect, exchange & payout of funds or coins or tokens"
+							},
+							"response": []
+						},
+						{
+							"name": "Generate Account",
+							"_postman_id": "d72c5526-18ad-490f-8e2a-0262e9b522ad",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"code\": \"\", //get from misc endpoint\n    \"bank_name\": \"\",\n    \"order_reference_code\": \"\",\n    \"meta\": {\n        \"name\": \"\", //label\n        \"dob\": \"\", //mm-dd-yyyy\n        \"bvn\": \"\",\n        \"customID\": \"\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/generate-account"
+							},
+							"response": []
+						},
+						{
+							"name": "Collect",
+							"_postman_id": "22952595-9e33-4ff2-83e4-26fefaf8567e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"amount\": \"\",\n    \"method\": \"\", //card or account_transfer\n    \"meta\": {\n        \"name\": \"\", //label\n        \"narration\": \"\", //details of value collection\n        \"customID\": \"\", //To receive value on the wallet.\n        \"bearer\": \"\" //charges bearer\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/collect"
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "5d661b7e-cacd-46b3-968b-453cc7536496",
+					"_postman_isSubFolder": true
+				}
+			],
+			"_postman_id": "d08d5ef7-8d18-4287-aa3d-366503040874"
+		},
+		{
+			"name": "Token",
+			"item": [
+				{
+					"name": "Deploy",
+					"_postman_id": "ccc899f7-c224-4ae2-9f37-e6813b214142",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"\", //get from misc endpoint\n    \"order_reference_code\": \"\",\n    \"blockchain\": \"\",\n    \"meta\": {\n        \"name\": \"\", //name of the token\n        \"symbol\": \"\", //symbol of the token\n        \"customID\": \"\", //optional - email address of account creating for\n        \"privateKey\": \"\", //Private key of the address paying for gas fee\n        \"address\": \"\", // address to receive intial token minted\n        \"dataUrl\": \"\", //URL of token details\n        \"supply\": \"\", //Total numbers of tokens to be available\n        \"decimal_digits\": \"\",\n        \"gasLimit\": \"\",\n        \"gasPrice\": \"\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/token/deploy",
+						"description": "## Create your own tokens with ease\n\nToken technology made simple.\n\nBuild and deploy Web3 services in minutes"
+					},
+					"response": []
+				},
+				{
+					"name": "Mint",
+					"_postman_id": "236ce30f-494c-4890-b695-021313cfa19d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"\", //get from misc endpoint\n    \"order_reference_code\": \"\",\n    \"blockchain\": \"\", //CELO\n    \"meta\": {\n        \"name\": \"\", //name of the token\n        \"customID\": \"\", //optional - email address of account creating for\n        \"privateKey\": \"\", //Private key of the address paying for gas fee\n        \"address\": \"\", // address to receive token minted\n        \"token_id\": \"\", //ID of the token\n        \"amount\": \"\", //Total numbers of tokens to be minted\n        \"contract_address\": \"\", //Returned when deploying\n        \"gasLimit\": \"\",\n        \"gasPrice\": \"\",\n        \"deductFrom\" : \"\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/token/mint"
+					},
+					"response": []
+				},
+				{
+					"name": "Transfer",
+					"_postman_id": "6432bf77-7068-4993-a5a9-84c225488653",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"\", //get from misc endpoint\n    \"order_reference_code\": \"\",\n    \"blockchain\": \"\", //CELO\n    \"kms\": \"\", //ID returned when creating blockchain wallet or xpub_index of generating address\n    \"manage\": \"\", //Yes or No; required to save mnemonic, xpub and private keys\n    \"meta\": {\n        \"name\": \"\", //name of the token\n        \"custom\": \"\", //optional - email address of account creating for\n        \"privateKey\": \"\", //Private key of the address paying for gas fee\n        \"address\": \"\", // address to receive token minted\n        \"token_id\": \"\", //ID of the token\n        \"amount\": \"\", //Total numbers of tokens to be minted\n        \"contract_address\": \"\", //Returned when deploying\n        \"gasLimit\": \"\",\n        \"gasPrice\": \"\",\n        \"deductFrom\" : \"\" //e.g. CUSD or CELO or CEUR\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/token/transfer"
+					},
+					"response": []
+				},
+				{
+					"name": "Burn",
+					"_postman_id": "9d56a083-b561-4182-bcc0-1bb26bbd398c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"\", //get from misc endpoint\n    \"order_reference_code\": \"\",\n    \"blockchain\": \"\", //CELO\n    \"kms\": \"\", //ID returned when creating blockchain wallet or xpub_index of generating address\n    \"manage\": \"\", //Yes or No; required to save mnemonic, xpub and private keys\n    \"meta\": {\n        \"name\": \"\", //name of the token\n        \"custom\": \"\", //optional - email address of account creating for\n        \"privateKey\": \"\", //Private key of the address paying for gas fee\n        \"address\": \"\", // address to receive token minted\n        \"token_id\": \"\", //ID of the token\n        \"amount\": \"\", //Total numbers of tokens to be minted\n        \"contract_address\": \"\", //Returned when deploying\n        \"gasLimit\": \"\",\n        \"gasPrice\": \"\",\n        \"deductFrom\": \"\" //e.g. CUSD or CELO or CEUR\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/token/burn"
+					},
+					"response": []
+				},
+				{
+					"name": "Details",
+					"_postman_id": "6346c3ee-4fa3-4bc1-ade2-59fb33f88d8c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"\", //get from misc endpoint\n    \"order_reference_code\": \"\",\n    \"blockchain\": \"\", //CELO\n    \"type\": \"\", //transactions or balance\n    \"limit\": \"\", //optional\n    \"page\": \"\", //optional\n    \"meta\": {\n        \"txID\": \"\", //txID return after each request\n        \"customID\": \"\", //email address of user\n        \"address\": \"\", // Wallet address\n        \"token_id\": \"\", //ID of the token\n        \"contract_address\": \"\" //Returned when deploying\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/token/details"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "a29f1c14-f953-4f79-ad87-36bc166394ae"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d6847918-5ee4-48fa-9bad-6c7d51987cc5",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8903439c-f6ef-434b-ad2b-5a387faac428",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
