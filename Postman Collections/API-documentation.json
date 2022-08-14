@@ -11,7 +11,7 @@
 			"item": [
 				{
 					"name": "Status",
-					"_postman_id": "3b1c4d63-89b7-4aa6-85ce-c66f4a396b85",
+					"id": "3b1c4d63-89b7-4aa6-85ce-c66f4a396b85",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -39,7 +39,7 @@
 				},
 				{
 					"name": "File Upload",
-					"_postman_id": "c692b323-0b72-4bec-a095-fe068f6f31a2",
+					"id": "c692b323-0b72-4bec-a095-fe068f6f31a2",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -66,8 +66,7 @@
 									"description": "Yes or No",
 									"type": "default"
 								}
-							],
-							"options": {}
+							]
 						},
 						"url": "https://api.moipayway.com/file-upload"
 					},
@@ -75,7 +74,7 @@
 				},
 				{
 					"name": "Charges",
-					"_postman_id": "2dc7e2f5-e22f-4cec-bae0-d354b456b14b",
+					"id": "2dc7e2f5-e22f-4cec-bae0-d354b456b14b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -102,7 +101,7 @@
 					"response": []
 				}
 			],
-			"_postman_id": "7387d27d-9356-44f5-9023-2baf9f7c335b",
+			"id": "7387d27d-9356-44f5-9023-2baf9f7c335b",
 			"description": "This folder contains miscellaneous endpoints needed to have smooth integration with MoiPayWay infrastructure."
 		},
 		{
@@ -110,7 +109,7 @@
 			"item": [
 				{
 					"name": "Sign Up",
-					"_postman_id": "4ffc9207-d3f7-4449-83b5-3c555f4e873a",
+					"id": "4ffc9207-d3f7-4449-83b5-3c555f4e873a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -139,14 +138,14 @@
 								}
 							}
 						},
-						"url": "https://api.moipayway.com/user/signup",
+						"url": "https://api.moipayway.com/user/sign-up",
 						"description": "**Authentication**\n\nGet in to MoiPayWay infrastructure by creating an account to identify you as a user or sub-user of a merchant account.\n\n**Merchant API key required to authorize**"
 					},
 					"response": []
 				},
 				{
 					"name": "Sign In",
-					"_postman_id": "e5a9878e-71dd-465b-a05b-eb6cb4adbeff",
+					"id": "e5a9878e-71dd-465b-a05b-eb6cb4adbeff",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -182,7 +181,7 @@
 				},
 				{
 					"name": "Recover Account",
-					"_postman_id": "08297f58-9fd2-45a6-8571-9f74a218aa8a",
+					"id": "08297f58-9fd2-45a6-8571-9f74a218aa8a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -217,7 +216,7 @@
 				},
 				{
 					"name": "Sign Out",
-					"_postman_id": "3b61c2cd-fa85-4e05-a0af-2f5581f781b4",
+					"id": "3b61c2cd-fa85-4e05-a0af-2f5581f781b4",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -253,7 +252,7 @@
 				},
 				{
 					"name": "Account",
-					"_postman_id": "f8b693f7-ed19-4ed1-b0e4-eabdbcd149a4",
+					"id": "f8b693f7-ed19-4ed1-b0e4-eabdbcd149a4",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -288,14 +287,14 @@
 					"response": []
 				}
 			],
-			"_postman_id": "973469c4-871d-4b32-8a00-edc3a6836596"
+			"id": "973469c4-871d-4b32-8a00-edc3a6836596"
 		},
 		{
 			"name": "Merchant",
 			"item": [
 				{
 					"name": "Sign Up",
-					"_postman_id": "e01a64f8-a4de-4496-aa98-f560bc45d8f5",
+					"id": "e01a64f8-a4de-4496-aa98-f560bc45d8f5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -331,7 +330,7 @@
 				},
 				{
 					"name": "Sign In",
-					"_postman_id": "7ea4c87e-cf0a-4966-a80d-b7d4c8c31252",
+					"id": "7ea4c87e-cf0a-4966-a80d-b7d4c8c31252",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -367,7 +366,7 @@
 				},
 				{
 					"name": "Account",
-					"_postman_id": "aaca4e4c-7b8c-4ba9-853a-d66c99acb814",
+					"id": "aaca4e4c-7b8c-4ba9-853a-d66c99acb814",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -403,7 +402,7 @@
 				},
 				{
 					"name": "Team",
-					"_postman_id": "9524668f-5e69-45cd-b6bc-a2fb385420bf",
+					"id": "9524668f-5e69-45cd-b6bc-a2fb385420bf",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -439,7 +438,7 @@
 				},
 				{
 					"name": "Type",
-					"_postman_id": "69454cec-6e15-4740-8f42-96371fa72ff2",
+					"id": "69454cec-6e15-4740-8f42-96371fa72ff2",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -474,14 +473,14 @@
 					"response": []
 				}
 			],
-			"_postman_id": "19ad5ed9-5b02-4e19-a0ff-02db0a2cf3dd"
+			"id": "19ad5ed9-5b02-4e19-a0ff-02db0a2cf3dd"
 		},
 		{
 			"name": "Verification",
 			"item": [
 				{
 					"name": "lookup",
-					"_postman_id": "b7c1f3ec-3c9f-4007-bafc-b09c1712a43a",
+					"id": "b7c1f3ec-3c9f-4007-bafc-b09c1712a43a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -517,7 +516,7 @@
 				},
 				{
 					"name": "Details",
-					"_postman_id": "dd6cc94a-7276-4a42-b0fb-a2f7a69f6f89",
+					"id": "dd6cc94a-7276-4a42-b0fb-a2f7a69f6f89",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -544,7 +543,7 @@
 					"response": []
 				}
 			],
-			"_postman_id": "3cb602f0-f877-47a0-858f-6bbb34c5a1b2"
+			"id": "3cb602f0-f877-47a0-858f-6bbb34c5a1b2"
 		},
 		{
 			"name": "Wallet",
@@ -554,7 +553,7 @@
 					"item": [
 						{
 							"name": "Create Wallet",
-							"_postman_id": "95b77200-e516-4300-860b-4e1564f92e0f",
+							"id": "95b77200-e516-4300-860b-4e1564f92e0f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -590,7 +589,7 @@
 						},
 						{
 							"name": "Generate Account",
-							"_postman_id": "119fce4f-d6f4-47d1-8523-4fab8f1c4d80",
+							"id": "119fce4f-d6f4-47d1-8523-4fab8f1c4d80",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -612,7 +611,7 @@
 						},
 						{
 							"name": "Collect",
-							"_postman_id": "da87051f-0acb-4862-83e0-b591b3076a6b",
+							"id": "da87051f-0acb-4862-83e0-b591b3076a6b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -640,7 +639,7 @@
 						},
 						{
 							"name": "Transfer",
-							"_postman_id": "6b042102-3fdd-48f5-8f40-7bb6b7d65d83",
+							"id": "6b042102-3fdd-48f5-8f40-7bb6b7d65d83",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -668,7 +667,7 @@
 						},
 						{
 							"name": "Details",
-							"_postman_id": "d983b5b7-0970-4b70-bed0-74dfbf7721d0",
+							"id": "d983b5b7-0970-4b70-bed0-74dfbf7721d0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -696,7 +695,7 @@
 						},
 						{
 							"name": "Exchange",
-							"_postman_id": "a3e72299-15c0-447e-8b30-642ffb20aa2e",
+							"id": "a3e72299-15c0-447e-8b30-642ffb20aa2e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -723,15 +722,14 @@
 							"response": []
 						}
 					],
-					"_postman_id": "713f547d-5bae-4f0a-8f26-e432d2ef874b",
-					"_postman_isSubFolder": true
+					"id": "713f547d-5bae-4f0a-8f26-e432d2ef874b"
 				},
 				{
 					"name": "Fiat",
 					"item": [
 						{
 							"name": "Create Wallet",
-							"_postman_id": "b33dc31f-a6c4-4855-9753-e1681a9e3d14",
+							"id": "b33dc31f-a6c4-4855-9753-e1681a9e3d14",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -767,7 +765,7 @@
 						},
 						{
 							"name": "Generate Account",
-							"_postman_id": "d72c5526-18ad-490f-8e2a-0262e9b522ad",
+							"id": "d72c5526-18ad-490f-8e2a-0262e9b522ad",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -802,7 +800,7 @@
 						},
 						{
 							"name": "Collect",
-							"_postman_id": "22952595-9e33-4ff2-83e4-26fefaf8567e",
+							"id": "22952595-9e33-4ff2-83e4-26fefaf8567e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -829,18 +827,17 @@
 							"response": []
 						}
 					],
-					"_postman_id": "5d661b7e-cacd-46b3-968b-453cc7536496",
-					"_postman_isSubFolder": true
+					"id": "5d661b7e-cacd-46b3-968b-453cc7536496"
 				}
 			],
-			"_postman_id": "d08d5ef7-8d18-4287-aa3d-366503040874"
+			"id": "d08d5ef7-8d18-4287-aa3d-366503040874"
 		},
 		{
 			"name": "Token",
 			"item": [
 				{
 					"name": "Deploy",
-					"_postman_id": "ccc899f7-c224-4ae2-9f37-e6813b214142",
+					"id": "ccc899f7-c224-4ae2-9f37-e6813b214142",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -876,7 +873,7 @@
 				},
 				{
 					"name": "Mint",
-					"_postman_id": "236ce30f-494c-4890-b695-021313cfa19d",
+					"id": "236ce30f-494c-4890-b695-021313cfa19d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -911,7 +908,7 @@
 				},
 				{
 					"name": "Transfer",
-					"_postman_id": "6432bf77-7068-4993-a5a9-84c225488653",
+					"id": "6432bf77-7068-4993-a5a9-84c225488653",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -946,7 +943,7 @@
 				},
 				{
 					"name": "Burn",
-					"_postman_id": "9d56a083-b561-4182-bcc0-1bb26bbd398c",
+					"id": "9d56a083-b561-4182-bcc0-1bb26bbd398c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -981,7 +978,7 @@
 				},
 				{
 					"name": "Details",
-					"_postman_id": "6346c3ee-4fa3-4bc1-ade2-59fb33f88d8c",
+					"id": "6346c3ee-4fa3-4bc1-ade2-59fb33f88d8c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1015,7 +1012,7 @@
 					"response": []
 				}
 			],
-			"_postman_id": "a29f1c14-f953-4f79-ad87-36bc166394ae"
+			"id": "a29f1c14-f953-4f79-ad87-36bc166394ae"
 		}
 	],
 	"event": [
