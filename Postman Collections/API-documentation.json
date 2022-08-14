@@ -323,7 +323,7 @@
 								}
 							}
 						},
-						"url": "https://api.moipayway.com/merchant/signup",
+						"url": "https://api.moipayway.com/merchant/sign-up",
 						"description": "**Authentication**\n\nThis endpoint allows you to open a business account or a control account for you to access the MoiPayWay infrastructure."
 					},
 					"response": []
