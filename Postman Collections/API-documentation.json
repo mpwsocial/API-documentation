@@ -174,7 +174,7 @@
 								}
 							}
 						},
-						"url": "https://api.moipayway.com/user/signin",
+						"url": "https://api.moipayway.com/user/sign-in",
 						"description": "**Authentication**\n\nSign in to get token and make calls on the MoiPayWay system."
 					},
 					"response": []
