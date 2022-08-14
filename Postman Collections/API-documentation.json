@@ -359,7 +359,7 @@
 								}
 							}
 						},
-						"url": "https://api.moipayway.com/merchant/signin",
+						"url": "https://api.moipayway.com/merchant/sign-in",
 						"description": "**Authentication**\n\nGet in control of your merchant account and orders by signing in with the signed in token and the API key associated with your account."
 					},
 					"response": []
