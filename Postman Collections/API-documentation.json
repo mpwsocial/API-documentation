@@ -531,7 +531,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"limit\": \"\",\n    \"page\": \"\",\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"rangeFrom\": \"\", // dateTimestamp YYYY-MM-DD\n    \"rangeTo\": \"\", // dateTimestamp YYYY-MM-DD\n    \"sortBy\": \"\", //enum old or new\n    \"limit\": \"\", //numbers to display per page\n    \"page\": \"\", //page number to view\n    \"type\" : \"\", //enum transactions \n    \"country\" : \"\", //enum lookup or\n}",
+							"raw": "{\n    \"limit\": \"\",\n    \"page\": \"\",\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"rangeFrom\": \"\", // dateTimestamp YYYY-MM-DD\n    \"rangeTo\": \"\", // dateTimestamp YYYY-MM-DD\n    \"sortBy\": \"\", //enum old or new\n    \"limit\": \"\", //numbers to display per page\n    \"page\": \"\", //page number to view\n    \"type\": \"\", //enum transactions \n    \"country\": \"\" //Nigeria\n}",
 							"options": {
 								"raw": {
 									"language": "json"
