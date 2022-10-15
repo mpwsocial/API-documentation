@@ -131,7 +131,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\": \"\",\n    \"password\": \"\",\n    \"phone_number\": \"\", //starting with +\n    \"send_validation_code\": \"\", //enum Yes or No\n    \"validation_code\": \"\" //Needed for validation\n}",
+							"raw": "{\n    \"email\": \"\", //required\n    \"password\": \"\", //required\n    \"phone_number\": \"\",\n    \"send_validation_code\": \"\", //enum Yes or No\n    \"validation_code\": \"\" //Needed for validation\n}",
 							"options": {
 								"raw": {
 									"language": "json"
