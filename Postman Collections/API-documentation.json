@@ -502,7 +502,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"code\": \"\", //get from misc endpoint\n    \"order_reference_code\": \"\", //optional\n    \"with\" : \"\", // enum: image\n    \"meta\": {\n        \"front_image\": \"\", //file URL - needed if sending multiple look\n        \"back_image\": \"\", //file URL - needed if sending multiple look\n        \"value\": \"\" //this can be image url or number or text or file URL or combination\n    }\n}",
+							"raw": "{\n    \"code\": \"\", //get from misc endpoint\n    \"order_reference_code\": \"\", //optional\n    \"with\": \"\", // enum: image\n    \"meta\": {\n        \"customID\": \"\", //CustomID returned from API call\n        \"front_image\": \"\", //file URL - needed if sending multiple look\n        \"back_image\": \"\", //file URL - needed if sending multiple look\n        \"value\": \"\" //this can be image url or number or text or file URL or combination\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
