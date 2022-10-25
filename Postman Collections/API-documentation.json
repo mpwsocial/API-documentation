@@ -471,6 +471,18 @@
 						"description": "Get list of business types or sectors on MoiPayWay"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "a6def2bb-ebb7-432c-be9d-ab9a387f28a4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "19ad5ed9-5b02-4e19-a0ff-02db0a2cf3dd"
