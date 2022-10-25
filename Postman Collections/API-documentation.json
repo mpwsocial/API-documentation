@@ -388,7 +388,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"action\": \"\", //view or update\n    \"name\": \"\",\n    \"description\": \"\",\n    \"success_webhook_url\": \"\",\n    \"failed_webhook_url\": \"\",\n    \"short_name\": \"\",\n    \"bearer\": \"\", //merchant or user\n    \"merchant_email_notification\": \"\", //Yes or No\n    \"merchant_sms_notification\": \"\", //Yes or No\n    \"user_email_notification\": \"\", //Yes or No\n    \"user_sms_notification\": \"\", //Yes or No\n    \"logo\": \"\",\n    \"business_email\": \"\",\n    \"support_email\": \"\",\n    \"phone_number\": \"\",\n    \"active\": \"\", //Yes or No\n    \"management\": \"\" //Yes or No\n}",
+							"raw": "{\n    \"action\": \"\", //view or update\n    \"name\": \"\",\n    \"description\": \"\",\n    \"success_webhook_url\": \"\",\n    \"failed_webhook_url\": \"\",\n    \"short_name\": \"\",\n    \"bearer\": \"\", //merchant or user\n    \"merchant_email_notification\": \"\", //Yes or No\n    \"merchant_sms_notification\": \"\", //Yes or No\n    \"user_email_notification\": \"\", //Yes or No\n    \"user_sms_notification\": \"\", //Yes or No\n    \"logo\": \"\",\n    \"business_email\": \"\",\n    \"support_email\": \"\",\n    \"phone_number\": \"\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
