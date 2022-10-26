@@ -489,7 +489,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\n    \"product\": \"\" //enum: verification or card or bills or wallet or store\n}",
 							"options": {
 								"raw": {
 									"language": "json"
