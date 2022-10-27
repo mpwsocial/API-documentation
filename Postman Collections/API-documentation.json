@@ -738,7 +738,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"code\": \"\", \n    \"order_reference_code\": \"\",\n    \"amount\": \"\", //amount\n    \"meta\": {\n        \"from\": \"\",\n        \"to\": \"\",\n        \"address\": \"\"\n    }\n}",
+									"raw": "{\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"amount\": \"\", //amount\n    \"type\": \"\", //enum: rates or list\n    \"meta\": {\n        \"from\": \"\",\n        \"to\": \"\",\n        \"address\": \"\"\n    }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
