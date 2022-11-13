@@ -111,7 +111,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"product\" : \"\",\n    \"code\" : \"\",\n    \"action\" : \"\"\n}",
+							"raw": "{\n    \"product\": \"\",\n    \"code\": \"\",\n    \"action\": \"\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
