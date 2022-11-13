@@ -101,7 +101,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Pricing",
 					"id": "de907909-8bc6-4fb8-bf33-d5e367289a30",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
