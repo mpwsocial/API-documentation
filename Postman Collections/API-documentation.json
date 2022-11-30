@@ -877,7 +877,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Transfer",
 							"id": "da197df4-0542-44a0-879e-bdfbf7a10434",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
