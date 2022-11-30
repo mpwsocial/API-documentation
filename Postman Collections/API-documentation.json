@@ -875,6 +875,18 @@
 								"url": "https://api.moipayway.com/wallet/collect"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "da197df4-0542-44a0-879e-bdfbf7a10434",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "5d661b7e-cacd-46b3-968b-453cc7536496"
