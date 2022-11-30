@@ -883,8 +883,24 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"amount\": \"\", //amount\n    \"meta\": {\n        \"name\": \"\", //label\n        \"narration\": \"\", //details of value collection\n        \"from\": \"\", //customID or address\n        \"bank_code\": \"\",\n           \"account_nu\": \"\",\n        \"ReceivingCurrency\": \"\" //if not receiving in base currency.\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/transfer"
 							},
 							"response": []
 						}
