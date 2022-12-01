@@ -121,6 +121,18 @@
 						"url": "https://api.moipayway.com/pricing"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "804fe26c-771e-4871-b865-98ae1f92dbdd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "7387d27d-9356-44f5-9023-2baf9f7c335b",
