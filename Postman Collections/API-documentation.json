@@ -130,7 +130,8 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"description": "``` javascript\n\n\n<br>    $(document).ready(function () {\n<br>        $(document).ready(function ($) {\n<br>            $('.pay').MPWcheckout({\n<br>                reference: '',\n<br>                email: '',\n<br>                phone: '',\n<br>                key: '',\n<br>                description: '',\n<br>                amount: '',\n<br>                description: '',\n<br>                logo_url: '',\n<br>                onClose: function () {\n<br>                    //redirect to somewhere to reconfirm before giving value\n<br>                },\n<br>            });\n<br>        });\n<br>    });\n<br>\n\n```"
 					},
 					"response": []
 				}
