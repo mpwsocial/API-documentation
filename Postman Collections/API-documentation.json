@@ -906,7 +906,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"amount\": \"\", //amount\n    \"meta\": {\n        \"name\": \"\", //label\n        \"narration\": \"\", //details of value collection\n        \"from\": \"\", //customID\n        \"to\" : \"\", //customID \n        \"bank_code\": \"\",\n        \"account_no\": \"\",\n        \"destination\" : \"\" //bank_account or \n\n    }\n}",
+									"raw": "{\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"amount\": \"\", //amount\n    \"meta\": {\n        \"name\": \"\", //label\n        \"narration\": \"\", //details of value collection\n        \"from\": \"\", //customID\n        \"to\": \"\", //customID  [Pass if transfer is from one wallet to another wallet within MoiPayWay]\n        \"bank_code\": \"\",\n        \"account_no\": \"\",\n        \"destination\": \"\" //bank_account or \n    }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
