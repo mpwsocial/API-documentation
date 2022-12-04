@@ -850,7 +850,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"code\": \"\", //get from misc endpoint\n    \"bank_name\": \"\",\n    \"order_reference_code\": \"\",\n    \"meta\": {\n        \"name\": \"\", //label\n        \"dob\": \"\", //mm-dd-yyyy\n        \"bvn\": \"\",\n        \"customID\": \"\"\n    }\n}",
+									"raw": "{\n    \"code\": \"\", //get from misc endpoint\n    \"order_reference_code\": \"\",\n    \"meta\": {\n        \"name\": \"\", //label\n        \"dob\": \"\", //mm-dd-yyyy\n        \"unique_id\": \"\", //bvn\n        \"bank_name\": \"\",\n        \"customID\": \"\",\n        \"utility_bill\": \"\",\n        \"government_id\": \"\",\n        \"government_id_type\": \"\"\n    }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
