@@ -906,7 +906,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"amount\": \"\", //amount\n    \"meta\": {\n        \"name\": \"\", //label\n        \"narration\": \"\", //details of value collection\n        \"from\": \"\", //customID\n        \"bank_code\": \"\",\n        \"account_no\": \"\",\n        \"ReceivingCurrency\": \"\",\n        \"account_name\": \"\"\n    }\n}",
+									"raw": "{\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"amount\": \"\", //amount\n    \"meta\": {\n        \"name\": \"\", //label\n        \"narration\": \"\", //details of value collection\n        \"from\": \"\", //customID\n        \"bank_code\": \"\",\n        \"account_no\": \"\",\n        \"ReceivingCurrency\": \"\", //NGN or GBP or USD or EUR. default will be customID wallet currency\n        \"account_name\": \"\",\n        \"\"\n    }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
