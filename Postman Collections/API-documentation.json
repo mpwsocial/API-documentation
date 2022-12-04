@@ -916,6 +916,34 @@
 								"url": "https://api.moipayway.com/wallet/transfer"
 							},
 							"response": []
+						},
+						{
+							"name": "Details",
+							"id": "6be9b56a-98f7-4cf5-8654-abf9b77cc4af",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"amount\": \"\", //amount\n    \"meta\": {\n        \"name\": \"\", //label\n        \"narration\": \"\", //details of value collection\n        \"from\": \"\", //customID\n        \"to\": \"\", //customID  [Pass if transfer is from one wallet to another wallet within MoiPayWay]\n        \"bank_code\": \"\",\n        \"account_no\": \"\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/transfer"
+							},
+							"response": []
 						}
 					],
 					"id": "5d661b7e-cacd-46b3-968b-453cc7536496"
