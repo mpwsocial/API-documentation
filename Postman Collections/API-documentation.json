@@ -136,7 +136,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Bank",
 					"id": "1f4a3737-7a80-4bf9-9147-9397d8ac69e9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
