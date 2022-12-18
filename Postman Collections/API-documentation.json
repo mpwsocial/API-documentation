@@ -1062,6 +1062,18 @@
 								"url": "https://api.moipayway.com/wallet/settlementaccounts/remove"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "39335e12-1ee1-40ca-9d03-ea76dd9d99e3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "a1370082-2f8d-4c8a-ba85-1e8e5534520c"
