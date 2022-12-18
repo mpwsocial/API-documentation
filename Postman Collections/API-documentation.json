@@ -978,7 +978,20 @@
 				},
 				{
 					"name": "Settlement Account",
-					"item": [],
+					"item": [
+						{
+							"name": "New Request",
+							"id": "328dd6b9-de12-4a64-a462-270962c80534",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "a1370082-2f8d-4c8a-ba85-1e8e5534520c"
 				}
 			],
