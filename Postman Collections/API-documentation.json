@@ -1059,7 +1059,7 @@
 										}
 									}
 								},
-								"url": "https://api.moipayway.com/wallet/settlementaccount/remove"
+								"url": "https://api.moipayway.com/wallet/settlementaccounts/remove"
 							},
 							"response": []
 						}
