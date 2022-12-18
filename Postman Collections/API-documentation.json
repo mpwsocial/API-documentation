@@ -131,7 +131,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"description": "``` javascript\n\n\n<br>    $(document).ready(function () {\n<br>        $(document).ready(function ($) {\n<br>            $('.pay').MPWcheckout({\n<br>                reference: '',\n<br>                email: '',\n<br>                phone: '',\n<br>                key: '',\n<br>                description: '',\n<br>                amount: '',\n<br>                description: '',\n<br>                logo_url: '',\n<br>                onClose: function () {\n<br>                    //redirect to somewhere to reconfirm before giving value\n<br>                },\n<br>            });\n<br>        });\n<br>    });\n<br>\n\n```"
+						"description": "``` plaintext\n  $('#pay').MPWcheckout({\n                        reference: '',\n                        /* email: '',\n                         phone: '',\n                         key: '',\n                         description: '',\n                         amount: '',\n                         description: '',\n                         logo_url: '',\n                         */\n                        onClose: function(response) {\n                            if (response.status == 'success') {\n                                console.log();\n                            } else {\n                                console.log();\n                            }\n                        },\n                    });\n\n```"
 					},
 					"response": []
 				},
