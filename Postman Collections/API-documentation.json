@@ -1036,7 +1036,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Remove",
 							"id": "413709e4-6b0d-491d-b874-2b77e6faca72",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
