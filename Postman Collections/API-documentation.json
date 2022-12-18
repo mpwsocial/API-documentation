@@ -1034,6 +1034,18 @@
 								"url": "http://api.moipayway.com/wallet/settlementaccount/list"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "413709e4-6b0d-491d-b874-2b77e6faca72",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "a1370082-2f8d-4c8a-ba85-1e8e5534520c"
