@@ -996,7 +996,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"\": \"\"\n}",
+									"raw": "{\n    \"bank_code\": \"\",\n    \"account_no\": \"\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
