@@ -1031,7 +1031,7 @@
 										}
 									}
 								},
-								"url": "http://api.moipayway.com/wallet/settlementaccount/list"
+								"url": "http://api.moipayway.com/wallet/settlementaccounts/list"
 							},
 							"response": []
 						},
