@@ -1064,7 +1064,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Merge",
 							"id": "39335e12-1ee1-40ca-9d03-ea76dd9d99e3",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
