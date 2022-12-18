@@ -1024,7 +1024,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"settlement_account_id\": \"\"\n}",
+									"raw": "{\n    \"settlement_account_id\": \"\",\n    \"limit\": \"\", //display per page\n    \"page\": \"\", //page to display\n    \"sortBy\": \"\" //old or new\n}",
 									"options": {
 										"raw": {
 											"language": "json"
