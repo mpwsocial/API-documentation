@@ -980,7 +980,7 @@
 					"name": "Settlement Account",
 					"item": [
 						{
-							"name": "New Request",
+							"name": "Add",
 							"id": "328dd6b9-de12-4a64-a462-270962c80534",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
