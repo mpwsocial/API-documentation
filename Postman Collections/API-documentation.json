@@ -1003,7 +1003,7 @@
 										}
 									}
 								},
-								"url": "https://api.moipayway.com/settlementaccounts/add"
+								"url": "https://api.moipayway.com/wallet/settlementaccounts/add"
 							},
 							"response": []
 						},
