@@ -773,7 +773,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"type\": \"\", //transactions or list_flows or list_currencies or list_rates or list_wallet or list_account\n    \"limit\": \"\", //display per page\n    \"page\": \"\", //page to display\n    \"filterBy\": \"\", //credit or debit\n    \"order_status\": \"\", //Successful or Pending or Failed | For list_flows; credit or debit\n    \"payment_status\": \"\", //Successful or Pending or Failed\n    \"sortBy\": \"\", //old or new\n    \"rangeFrom\": \"\", //from timestamp\n    \"rangeTo\": \"\", //to timestamp\n    \"meta\": {\n        \"txID\": \"\", //txID return after each request\n        \"customID\": \"\", //if passed all the details of addresses the customID has will be returned\n        \"address\": \"\", // if customID empty, transactions of address will only be display \n        \"from\": \"\",\n        \"to\": \"\",\n        \"amount\": \"\"\n    }\n}",
+									"raw": "{\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"type\": \"\", //transactions or list_flows or list_currencies or list_rates or list_wallet or list_account\n    \"limit\": \"\", //display per page\n    \"page\": \"\", //page to display\n    \"filterBy\": \"\", //credit or debit\n    \"order_status\": \"\", //Successful or Pending or Failed | For list_flows; credit or debit\n    \"payment_status\": \"\", //Successful or Pending or Failed\n    \"sortBy\": \"\", //old or new\n    \"rangeFrom\": \"\", //from timestamp\n    \"rangeTo\": \"\", //to timestamp\n    \"currency\": \"\", //filter based on currency display\n    \"meta\": {\n        \"txID\": \"\", //txID return after each request\n        \"customID\": \"\", //if passed all the details of addresses the customID has will be returned\n        \"address\": \"\", // if customID empty, transactions of address will only be display \n        \"from\": \"\",\n        \"to\": \"\",\n        \"amount\": \"\"\n    }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1008,34 +1008,6 @@
 							"response": []
 						},
 						{
-							"name": "List",
-							"id": "a3fa8194-8f14-457f-bc14-0dd0161014b1",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": {
-										"token": ""
-									}
-								},
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"settlement_account_id\": \"\",\n    \"limit\": \"\", //display per page\n    \"page\": \"\", //page to display\n    \"sortBy\": \"\" //old or new\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://api.moipayway.com/wallet/settlementaccounts/list"
-							},
-							"response": []
-						},
-						{
 							"name": "Remove",
 							"id": "413709e4-6b0d-491d-b874-2b77e6faca72",
 							"protocolProfileBehavior": {
@@ -1060,6 +1032,34 @@
 									}
 								},
 								"url": "https://api.moipayway.com/wallet/settlementaccounts/remove"
+							},
+							"response": []
+						},
+						{
+							"name": "List",
+							"id": "a3fa8194-8f14-457f-bc14-0dd0161014b1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"settlement_account_id\": \"\",\n    \"limit\": \"\", //display per page\n    \"page\": \"\", //page to display\n    \"sortBy\": \"\" //old or new\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/settlementaccounts/list"
 							},
 							"response": []
 						},
