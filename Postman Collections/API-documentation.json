@@ -1087,7 +1087,7 @@
 										}
 									}
 								},
-								"url": "https://api.moipayway.com/wallet/settlementaccounts/attach"
+								"url": "https://api.moipayway.com/wallet/settlementaccounts/attach-wallet"
 							},
 							"response": []
 						}
