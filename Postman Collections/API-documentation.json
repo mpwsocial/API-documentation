@@ -379,7 +379,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"\",\n    \"business_email\": \"\",\n    \"description\": \"\",\n    \"phone_number\": \"\",\n    \"type\": \"\" //Retrieve from type endpoint\n}",
+							"raw": "{\n    \"name\": \"\",\n    \"business_email\": \"\",\n    \"description\": \"\",\n    \"phone_number\": \"\",\n    \"invite_code\": \"\",\n    \"type\": \"\" //Retrieve from type endpoint\n}",
 							"options": {
 								"raw": {
 									"language": "json"
