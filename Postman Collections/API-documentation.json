@@ -350,7 +350,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Generate Invite Code",
 					"id": "a0183bba-0dd0-4611-be20-7eecaf77908c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
