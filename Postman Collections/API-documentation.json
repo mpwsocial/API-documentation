@@ -348,6 +348,18 @@
 						"description": "This endpoint allows you to retrieve entire details of an account in the system which correspond with merchant exploring the account.\n\n**Token returned from sign in authentication required**"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "a0183bba-0dd0-4611-be20-7eecaf77908c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "973469c4-871d-4b32-8a00-edc3a6836596"
