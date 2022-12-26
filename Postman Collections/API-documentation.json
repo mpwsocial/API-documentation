@@ -870,7 +870,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"code\": \"\", //get from misc endpoint\n    \"order_reference_code\": \"\",\n    \"meta\": {\n        \"name\": \"\", //label\n        \"customID\": \"\" //optional - email address of account creating wallet for (serve as identifier)\n    }\n}",
+									"raw": "{\n    \"code\": \"\", //get from misc endpoint\n    \"order_reference_code\": \"\",\n    \"meta\": {\n        \"name\": \"\", //label\n        \"email\": \"\" //optional - email address of account creating wallet for (serve as identifier)\n    }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
