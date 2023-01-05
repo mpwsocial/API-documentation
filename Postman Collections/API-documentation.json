@@ -962,7 +962,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"amount\": \"\", //amount\n    \"meta\": {\n        \"name\": \"\", //label\n        \"narration\": \"\", //details of value collection\n        \"from\": \"\", //customID\n        \"to\": \"\", //customID  [Pass if transfer is from one wallet to another wallet within MoiPayWay]\n        \"settlement_account_id\": \"\"\n    }\n}",
+									"raw": "{\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"amount\": \"\", //amount\n    \"meta\": {\n        \"name\": \"\", //label\n        \"narration\": \"\", //details of value collection\n        \"from\": \"\", //customID\n        \"to\": \"\",\n        \"route\": \"\" //enum: internal - customID  [Pass if transfer is from one wallet to another wallet within MoiPayWay] or external pass settlement account ID\n    }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
