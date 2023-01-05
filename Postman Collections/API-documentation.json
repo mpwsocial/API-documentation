@@ -668,6 +668,124 @@
 			"name": "Wallet",
 			"item": [
 				{
+					"name": "Settlement Account",
+					"item": [
+						{
+							"name": "Add",
+							"id": "328dd6b9-de12-4a64-a462-270962c80534",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"bank_code\": \"\",\n    \"account_no\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/settlementaccounts/add"
+							},
+							"response": []
+						},
+						{
+							"name": "Attach Wallet",
+							"id": "39335e12-1ee1-40ca-9d03-ea76dd9d99e3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"settlement_account_id\": \"\",\n    \"customID\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/settlementaccounts/attach-wallet"
+							},
+							"response": []
+						},
+						{
+							"name": "Detach Wallet",
+							"id": "413709e4-6b0d-491d-b874-2b77e6faca72",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"customID\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/settlementaccounts/detach-wallet"
+							},
+							"response": []
+						},
+						{
+							"name": "List",
+							"id": "a3fa8194-8f14-457f-bc14-0dd0161014b1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"settlement_account_id\": \"\",\n    \"limit\": \"\", //display per page\n    \"page\": \"\", //page to display\n    \"sortBy\": \"\" //old or new\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/settlementaccounts/list"
+							},
+							"response": []
+						}
+					],
+					"id": "a1370082-2f8d-4c8a-ba85-1e8e5534520c"
+				},
+				{
 					"name": "Blockchain",
 					"item": [
 						{
@@ -1005,122 +1123,9 @@
 					"id": "5d661b7e-cacd-46b3-968b-453cc7536496"
 				},
 				{
-					"name": "Settlement Account",
-					"item": [
-						{
-							"name": "Add",
-							"id": "328dd6b9-de12-4a64-a462-270962c80534",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": {
-										"token": ""
-									}
-								},
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"bank_code\": \"\",\n    \"account_no\": \"\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://api.moipayway.com/wallet/settlementaccounts/add"
-							},
-							"response": []
-						},
-						{
-							"name": "Attach Wallet",
-							"id": "39335e12-1ee1-40ca-9d03-ea76dd9d99e3",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": {
-										"token": ""
-									}
-								},
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"settlement_account_id\": \"\",\n    \"customID\": \"\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://api.moipayway.com/wallet/settlementaccounts/attach-wallet"
-							},
-							"response": []
-						},
-						{
-							"name": "Detach Wallet",
-							"id": "413709e4-6b0d-491d-b874-2b77e6faca72",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": {
-										"token": ""
-									}
-								},
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"customID\": \"\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://api.moipayway.com/wallet/settlementaccounts/detach-wallet"
-							},
-							"response": []
-						},
-						{
-							"name": "List",
-							"id": "a3fa8194-8f14-457f-bc14-0dd0161014b1",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": {
-										"token": ""
-									}
-								},
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"settlement_account_id\": \"\",\n    \"limit\": \"\", //display per page\n    \"page\": \"\", //page to display\n    \"sortBy\": \"\" //old or new\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://api.moipayway.com/wallet/settlementaccounts/list"
-							},
-							"response": []
-						}
-					],
-					"id": "a1370082-2f8d-4c8a-ba85-1e8e5534520c"
+					"name": "New Folder",
+					"item": [],
+					"id": "f8dc33bf-b2b4-4b0a-8c7d-225212f2320d"
 				}
 			],
 			"id": "d08d5ef7-8d18-4287-aa3d-366503040874"
