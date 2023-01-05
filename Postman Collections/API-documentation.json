@@ -1124,7 +1124,20 @@
 				},
 				{
 					"name": "Exchange",
-					"item": [],
+					"item": [
+						{
+							"name": "New Request",
+							"id": "cb16b626-0246-4d35-9c9a-a922be07f156",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "f8dc33bf-b2b4-4b0a-8c7d-225212f2320d"
 				}
 			],
