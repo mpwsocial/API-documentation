@@ -1126,7 +1126,7 @@
 					"name": "Exchange",
 					"item": [
 						{
-							"name": "New Request",
+							"name": "Rates",
 							"id": "cb16b626-0246-4d35-9c9a-a922be07f156",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
