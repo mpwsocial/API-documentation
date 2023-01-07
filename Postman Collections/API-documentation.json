@@ -1334,7 +1334,13 @@
 		},
 		{
 			"name": "Resources",
-			"item": [],
+			"item": [
+				{
+					"name": "New Folder",
+					"item": [],
+					"id": "1fe36bb7-6f37-473f-8c07-a3a0aa39dd66"
+				}
+			],
 			"id": "27ff7be9-4f3e-451d-9cc1-9bd0f8d518a3"
 		}
 	],
