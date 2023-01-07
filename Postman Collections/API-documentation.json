@@ -1390,7 +1390,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Subscribe",
 					"id": "7fac3dd5-2abb-4f46-97a1-620ed93496a1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
