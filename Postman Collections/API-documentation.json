@@ -1398,14 +1398,25 @@
 			"name": "Resources",
 			"item": [
 				{
-					"name": "List",
+					"name": "Details",
 					"id": "1d359067-5e2d-478b-8806-15f6b6b73588",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "https://api.moipayway.com/resources/details"
 					},
 					"response": []
 				},
