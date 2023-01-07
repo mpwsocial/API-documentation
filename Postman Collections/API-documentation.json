@@ -929,34 +929,6 @@
 								"url": "https://api.moipayway.com/wallet/details"
 							},
 							"response": []
-						},
-						{
-							"name": "Exchange",
-							"id": "a3e72299-15c0-447e-8b30-642ffb20aa2e",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": {
-										"token": "VZFczZ1asNlVtlEMU1WNXJFbaVkWHhWYhFjVoZFbkdlVtdneWxmVhJmRGNXZFRWalZkSXllboZkVxAneXxmWXZFWCRXVzwWYWxWS490RxcFZVlkeWVUOhJmRKdlWFp1VTpnV0Z1aaNnVHpEWldUMWRleWJXVsR2UTZkWxEVb1cVVx82dZpmWLZFbaRVUspVVSxGczRFbWtmUtJVVTxmWT1UVVpnVu50UNxmUQdVb0N1UWp0cZ1WOLJmRshFZFRGbWxmWHdFbFFTTGpFUWtmWX1keGVVVB1TP"
-									}
-								},
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"code\": \"\",\n    \"order_reference_code\": \"\",\n    \"amount\": \"\", //amount\n    \"type\": \"\", //enum: rates or list\n    \"meta\": {\n        \"from\": \"\",\n        \"to\": \"\",\n        \"address\": \"\"\n    }\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://api.moipayway.com/wallet/exchange"
-							},
-							"response": []
 						}
 					],
 					"id": "713f547d-5bae-4f0a-8f26-e432d2ef874b"
