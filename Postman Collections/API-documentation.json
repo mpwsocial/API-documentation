@@ -1376,7 +1376,20 @@
 		},
 		{
 			"name": "Resources",
-			"item": [],
+			"item": [
+				{
+					"name": "New Request",
+					"id": "1d359067-5e2d-478b-8806-15f6b6b73588",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "27ff7be9-4f3e-451d-9cc1-9bd0f8d518a3"
 		}
 	],
