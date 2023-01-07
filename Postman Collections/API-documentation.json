@@ -1337,7 +1337,20 @@
 			"item": [
 				{
 					"name": "MPWt",
-					"item": [],
+					"item": [
+						{
+							"name": "New Request",
+							"id": "65f8356f-cdca-498f-a3da-2430ae72c8db",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "1fe36bb7-6f37-473f-8c07-a3a0aa39dd66"
 				}
 			],
