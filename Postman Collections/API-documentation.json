@@ -1402,7 +1402,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Details",
 					"id": "14e84c02-f133-4e9a-b523-4c253743161d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
