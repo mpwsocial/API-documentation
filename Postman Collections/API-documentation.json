@@ -1174,7 +1174,7 @@
 										}
 									}
 								},
-								"url": "https://api.moipayway.com/wallet/mpwt/fund"
+								"url": "https://api.moipayway.com/wallet/mpwt/collect"
 							},
 							"response": []
 						},
