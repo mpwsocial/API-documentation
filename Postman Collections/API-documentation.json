@@ -1157,9 +1157,24 @@
 								"disableBodyPruning": true
 							},
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
 								"method": "POST",
 								"header": [],
-								"url": ""
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"from\": \"\", //CustomID of wallet funding from\n    \"amount\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/mpwt/fund"
 							},
 							"response": []
 						},
