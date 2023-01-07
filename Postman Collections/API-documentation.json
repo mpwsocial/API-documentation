@@ -1167,7 +1167,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"from\": \"\", //CustomID of wallet funding from\n    \"amount\": \"\"\n}",
+									"raw": "{\n    \"from\": \"\", //CustomID of wallet funding from\n    \"amount\": \"\", // amount is in from currency\n    \"action\": \"\" //calculate or initiate\n}",
 									"options": {
 										"raw": {
 											"language": "json"
