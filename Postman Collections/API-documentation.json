@@ -1146,6 +1146,48 @@
 						}
 					],
 					"id": "f8dc33bf-b2b4-4b0a-8c7d-225212f2320d"
+				},
+				{
+					"name": "MPWt",
+					"item": [
+						{
+							"name": "Fund",
+							"id": "65f8356f-cdca-498f-a3da-2430ae72c8db",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Transfer",
+							"id": "c2e2b02d-c147-42ba-828d-4cd044cf512f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "75a50ad9-a43d-480d-9dbf-2e96540e875a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "1fe36bb7-6f37-473f-8c07-a3a0aa39dd66"
 				}
 			],
 			"id": "d08d5ef7-8d18-4287-aa3d-366503040874"
@@ -1334,38 +1376,7 @@
 		},
 		{
 			"name": "Resources",
-			"item": [
-				{
-					"name": "MPWt",
-					"item": [
-						{
-							"name": "Fund",
-							"id": "65f8356f-cdca-498f-a3da-2430ae72c8db",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "Transfer",
-							"id": "c2e2b02d-c147-42ba-828d-4cd044cf512f",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": []
-							},
-							"response": []
-						}
-					],
-					"id": "1fe36bb7-6f37-473f-8c07-a3a0aa39dd66"
-				}
-			],
+			"item": [],
 			"id": "27ff7be9-4f3e-451d-9cc1-9bd0f8d518a3"
 		}
 	],
