@@ -1185,8 +1185,24 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"to\": \"\", //CustomID of wallet receiving mpwt from\n    \"amount\": \"\" // amount of mpwt \n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/wallet/mpwt/transfer"
 							},
 							"response": []
 						},
