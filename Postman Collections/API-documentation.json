@@ -168,6 +168,68 @@
 			"description": "This folder contains miscellaneous endpoints needed to have smooth integration with MoiPayWay infrastructure."
 		},
 		{
+			"name": "Resources",
+			"item": [
+				{
+					"name": "Details",
+					"id": "1d359067-5e2d-478b-8806-15f6b6b73588",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/resources/details"
+					},
+					"response": []
+				},
+				{
+					"name": "Subscribe",
+					"id": "7fac3dd5-2abb-4f46-97a1-620ed93496a1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/resources/subscribe"
+					},
+					"response": []
+				}
+			],
+			"id": "27ff7be9-4f3e-451d-9cc1-9bd0f8d518a3"
+		},
+		{
 			"name": "User",
 			"item": [
 				{
@@ -1390,71 +1452,21 @@
 						"url": "https://api.moipayway.com/token/details"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "f1b65bdb-df17-421e-a518-96311a230081",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "a29f1c14-f953-4f79-ad87-36bc166394ae"
-		},
-		{
-			"name": "Resources",
-			"item": [
-				{
-					"name": "Details",
-					"id": "1d359067-5e2d-478b-8806-15f6b6b73588",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": ""
-							}
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"code\": \"\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "https://api.moipayway.com/resources/details"
-					},
-					"response": []
-				},
-				{
-					"name": "Subscribe",
-					"id": "7fac3dd5-2abb-4f46-97a1-620ed93496a1",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": ""
-							}
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"code\": \"\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "https://api.moipayway.com/resources/subscribe"
-					},
-					"response": []
-				}
-			],
-			"id": "27ff7be9-4f3e-451d-9cc1-9bd0f8d518a3"
 		}
 	],
 	"event": [
