@@ -1454,7 +1454,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "File",
 					"id": "f1b65bdb-df17-421e-a518-96311a230081",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
