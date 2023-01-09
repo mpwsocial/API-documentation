@@ -1185,7 +1185,7 @@
 					"name": "MPWt",
 					"item": [
 						{
-							"name": "Collect",
+							"name": "Exchange",
 							"id": "65f8356f-cdca-498f-a3da-2430ae72c8db",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
