@@ -1208,7 +1208,7 @@
 										}
 									}
 								},
-								"url": "https://api.moipayway.com/wallet/mpwt/collect"
+								"url": "https://api.moipayway.com/wallet/mpwt/exchange"
 							},
 							"response": []
 						},
