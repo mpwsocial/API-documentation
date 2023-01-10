@@ -1177,6 +1177,18 @@
 								"url": "https://api.moipayway.com/wallet/exchange/rates"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "e275c3b3-daea-4740-a4ef-01eb5df17d34",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "f8dc33bf-b2b4-4b0a-8c7d-225212f2320d"
