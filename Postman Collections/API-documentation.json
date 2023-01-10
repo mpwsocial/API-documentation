@@ -1179,7 +1179,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Initiate",
 							"id": "e275c3b3-daea-4740-a4ef-01eb5df17d34",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
