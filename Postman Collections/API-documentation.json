@@ -1174,6 +1174,15 @@
 								},
 								"method": "POST",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"amount\": \"\",\n    \"from\": {\n        \"currency\": \"\"\n    },\n    \"to\": {\n        \"currency\": \"\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": "https://api.moipayway.com/wallet/exchange/rates"
 							},
 							"response": []
